@@ -1,10 +1,5 @@
-为解决在GG（Game Guardian）脚本合并时出现的模块划分、变量污染等问题，开发的一个小框架。
+require("space_keyword")
 
-- 支持在表中定义的函数能够通过`this`访问和修改表中的属性。
-- 支持表的继承，让子表能够通过`super`访问和修改父表中的属性。
-
-案例：
-```lua
 key = "global_value"
 local module = Space {
     key = "value";
@@ -50,4 +45,3 @@ module.outer_test() -- new_value
 print(module.key) -- new_value
 
 module.inner_module.main() -- new_value
-```
