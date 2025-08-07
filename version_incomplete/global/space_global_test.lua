@@ -1,4 +1,4 @@
-require("space_simple")
+require("space_global")
 
 local module = Space {
     key = "value";

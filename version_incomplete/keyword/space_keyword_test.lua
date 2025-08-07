@@ -1,5 +1,6 @@
 require("space_keyword")
 
+
 key = "global_value"
 local module = Space {
     key = "value";
@@ -29,8 +30,6 @@ local module = Space {
 
     end;
 }
-
-
 
 module.main()
 module.inner_test() -- new_value
